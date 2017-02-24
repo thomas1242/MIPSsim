@@ -1,4 +1,4 @@
-#Petri Net Simulator for a simplified MIPS Processor
+# Petri Net Simulator for a simplified MIPS Processor
 Generates step-by-step simulation of the Petri net model of a simplified MIPS processor.
 
 
@@ -9,7 +9,7 @@ Generates step-by-step simulation of the Petri net model of a simplified MIPS pr
 
 > java MIPSsim instructions.txt registers.txt datamemory.txt 
 
-# Simplified MIPS Processor specification
+# MIPS Processor specification
 ##Instruction Memory (INM):
 The processor to be simulated only supports five types of instructions: add (ADD), subtract (SUB),
 logical and (AND), logical or (OR), and load (LD).Instruction
