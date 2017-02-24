@@ -46,16 +46,16 @@ ISSUE1 transition consumes one arithmetic/logical (ADD, SUB, AND, OR) instructio
 ##ISSUE2:
 ISSUE2 transition consumes one load (LD) instruction token (if any) from INB and places it in the Load Instruction Buffer (LIB).
 
-##Arithmetic Logic Unit (ALU)
+##Arithmetic Logic Unit (ALU):
 ALU transition performs arithmetic/logical computations as per the instruction token from AIB, and
 places the result in the result buffer (REB).
 
-##Address Calculation (ADDR)
+##Address Calculation (ADDR):
 ADDR transition performs effective (data memory) address calculation for the load instruction by adding the contents of two source registers. It produces a token and places it in the address buffer (ADB).
 
 ##LOAD:
 The LOAD transition consumes a token from ADB and gets the data from the data memory for the corresponding address. It places the data value (result of load) in the result buffer (REB).
 
-##WRITE
+##WRITE:
 Transfers the result (one token) from the Result Buffer (REB) to the register file (RGF). If there are more than one token in REB in a time step, the WRITE transition writes the token that belongs to the in-order
 first instruction.
