@@ -4,6 +4,10 @@ Generates step-by-step simulation of the Petri net model of a simplified MIPS pr
 
 
  ![alt tag](images/MIPSsim.gif)
+ 
+#Compile and run:
+>> javac MIPSsim.java 
+>> java MIPSsim instructions.txt registers.txt datamemory.txt 
 
 # Simplified MIPS Processor specification
 ##Instruction Memory (INM):
