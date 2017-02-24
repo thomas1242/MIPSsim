@@ -4,10 +4,6 @@ Generates step-by-step simulation of the Petri net model of a simplified MIPS pr
 
  ![alt tag](images/MIPSsim.gif)
  
-#Compile and run:
-> javac MIPSsim.java 
-
-> java MIPSsim instructions.txt registers.txt datamemory.txt 
 
 # MIPS Processor specification
 ##Instruction Memory (INM):
@@ -59,3 +55,8 @@ The LOAD transition consumes a token from ADB and gets the data from the data me
 ##WRITE:
 Transfers the result (one token) from the Result Buffer (REB) to the register file (RGF). If there are more than one token in REB in a time step, the WRITE transition writes the token that belongs to the in-order
 first instruction.
+
+# Compile and run:
+> javac MIPSsim.java 
+
+> java MIPSsim instructions.txt registers.txt datamemory.txt 
