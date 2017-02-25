@@ -4,6 +4,19 @@ Generates step-by-step simulation of the Petri net model of a simplified MIPS pr
 
  ![alt tag](images/MIPSsim.gif)
  
+ 
+# Compiling the Program:
+To compile the source code into Java bytecode the JVM can interpret and run, invoke the Java compiler at the command line:
+```javascript
+   javac MIPSsim.java 
+```
+
+# Interpreting and Running the Program:
+To interpret and run the compiled Java program, invoke the Java interpreter at the command line which converts the Java bytecode to platform-dependent machine code so your computer can understand and run the program.
+```javascript
+   java MIPSsim instructions.txt registers.txt datamemory.txt 
+```
+ 
 
 # MIPS Processor specification
 ###Instruction Memory (INM):
@@ -41,15 +54,3 @@ The LOAD transition consumes a token from ADB and gets the data from the data me
 ###WRITE:
 Transfers the result (one token) from the Result Buffer (REB) to the register file (RGF). If there are more than one token in REB in a time step, the WRITE transition writes the token that belongs to the in-order
 first instruction.
-
-# Compiling the Program:
-To compile the source code into Java bytecode the JVM can interpret and run, invoke the Java compiler at the command line:
-```javascript
-javac MIPSsim.java 
-```
-
-# Interpreting and Running the Program:
-To interpret and run the compiled Java program, invoke the Java interpreter at the command line which converts the Java bytecode to platform-dependent machine code so your computer can understand and run the program.
-```javascript
-> java MIPSsim instructions.txt registers.txt datamemory.txt 
-```
