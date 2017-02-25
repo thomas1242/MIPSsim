@@ -8,14 +8,14 @@ Generates step-by-step simulation of the Petri net model of a simplified MIPS pr
 # MIPS Processor specification
 ##Instruction Memory (INM):
 The processor to be simulated only supports five types of instructions: 
-add (ADD), subtract (SUB), logical and (AND), logical or (OR), and load (LD). Instruction Memory (INM) can have up to 16 instruction tokens. It supports the following instruction format.</br>
+add (ADD), subtract (SUB), logical and (AND), logical or (OR), and load (LD). Instruction Memory (INM) can have up to 16 instruction tokens. It supports the following instruction format:</br>
  < opcode >, < Destination Register >, < First Source Operand >, < Second Source Operand > .</br>
 Sample instruction tokens and equivalent functionality are shown below:</br>
 < ADD, R1, R2, R3> -> R1 = R2 + R3.</br>
 < SUB, R1, R2, R3> -> R1 = R2 – R3.</br>
 < AND, R1, R2, R3> -> R1 = R2 & R3.</br>
 < OR, R1, R2, R3> -> R1 = R2 | R3.</br>
-< LD, R1, R2, R3> -> R1 = DataMemory[R2+R3].</br>
+< LD, R1, R2, R3> -> R1 = DataMemory[R2+R3]</br>
 
 ##Register File (RGF):
 This MIPS processor supports up to 8 registers (R0 through R7). At a time step it can have up to 8 tokens.
@@ -55,7 +55,7 @@ The LOAD transition consumes a token from ADB and gets the data from the data me
 Transfers the result (one token) from the Result Buffer (REB) to the register file (RGF). If there are more than one token in REB in a time step, the WRITE transition writes the token that belongs to the in-order
 first instruction.
 
-# Compile and run:
+# compile and run:
 > javac MIPSsim.java 
 
 > java MIPSsim instructions.txt registers.txt datamemory.txt 
