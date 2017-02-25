@@ -12,7 +12,7 @@ To compile the source code into Java bytecode the JVM can interpret and run, inv
 ```
 
 # Interpreting and Running the Program:
-To interpret and run the compiled Java program, invoke the Java interpreter at the command line which converts the Java bytecode to platform-dependent machine code so your computer can understand and run the program.
+To interpret and run the compiled Java program, invoke the Java interpreter at the command line which converts the Java bytecode to platform-dependent machine code your computer can understand and run.
 ```javascript
    java MIPSsim instructions.txt registers.txt datamemory.txt 
 ```
