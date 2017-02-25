@@ -14,8 +14,8 @@ add (ADD), subtract (SUB), logical and (AND), logical or (OR), and load (LD). In
 < ADD, R1, R2, R3> -> R1 = R2 + R3</br>
 < SUB, R1, R2, R3> -> R1 = R2 – R3</br>
 < AND, R1, R2, R3> -> R1 = R2 & R3</br>
-< OR, R1, R2, R3>  -> R1 = R2 | R3</br>
-< LD, R1, R2, R3>  -> R1 = DataMemory[R2+R3]</br>
+< OR, R1, R2, R3>   -> R1 = R2 | R3</br>
+< LD, R1, R2, R3>   -> R1 = DataMemory[R2+R3]</br>
 ##Register File (RGF):
 This MIPS processor supports up to 8 registers (R0 through R7). At a time step it can have up to 8 tokens.
 ##Data Memory (DAM):
