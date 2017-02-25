@@ -9,7 +9,7 @@ Generates step-by-step simulation of the Petri net model of a simplified MIPS pr
 ##Instruction Memory (INM):
 The processor to be simulated only supports five types of instructions: 
 add (ADD), subtract (SUB), logical and (AND), logical or (OR), and load (LD). Instruction Memory (INM) can have up to 16 instruction tokens. It supports the following instruction format:</br>
- < opcode >, < Destination Register >, < First Source Operand >, < Second Source Operand > .</br>
+ < opcode >, < Destination Register >, < First Source Operand >, < Second Source Operand ></br>
 < ADD, R1, R2, R3> -> R1 = R2 + R3.</br>
 < SUB, R1, R2, R3> -> R1 = R2 – R3.</br>
 < AND, R1, R2, R3> -> R1 = R2 & R3.</br>
