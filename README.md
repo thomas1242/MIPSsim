@@ -18,7 +18,7 @@ To interpret and run the compiled Java program, invoke the Java interpreter at t
 ```
  
 
-# MIPS Processor specification
+# Simplified MIPS Processor specification
 ###Instruction Memory (INM):
 The simulated processor supports only five types of instructions:</br> 
 add (ADD), subtract (SUB), logical and (AND), logical or (OR), and load (LD).</br> It supports the following instruction format:</br>
