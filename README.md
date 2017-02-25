@@ -45,7 +45,7 @@ first instruction.
 # Compiling the Program:
 To compile the source code into Java bytecode the JVM can interpret and run, invoke the Java compiler at the command line:
 '''javascript
-> javac MIPSsim.java 
+javac MIPSsim.java 
 '''
 
 # Interpreting and Running the Program:
