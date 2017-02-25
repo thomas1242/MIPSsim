@@ -8,7 +8,7 @@ Generates step-by-step simulation of the Petri net model of a simplified MIPS pr
 # MIPS Processor specification
 ###Instruction Memory (INM):
 The simulated processor supports only five types of instructions:</br> 
-add (ADD), subtract (SUB), logical and (AND), logical or (OR), and load (LD). It supports the following instruction format:</br>
+add (ADD), subtract (SUB), logical and (AND), logical or (OR), and load (LD).</br> It supports the following instruction format:</br>
  < opcode >, < Destination Register >, < First Source Operand >, < Second Source Operand ></br>
  Sample instruction tokens and equivalent functionality are shown below:</br>
 < ADD, R1, R2, R3> -> R1 = R2 + R3</br>
