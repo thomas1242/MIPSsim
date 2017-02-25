@@ -17,7 +17,6 @@ To interpret and run the compiled Java program, invoke the Java interpreter at t
    java MIPSsim instructions.txt registers.txt datamemory.txt 
 ```
  
-
 # Simplified MIPS Processor specification
 ###Instruction Memory (INM):
 The simulated processor supports only five types of instructions:</br> 
