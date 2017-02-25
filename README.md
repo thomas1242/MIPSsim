@@ -1,5 +1,5 @@
 # Petri Net Simulator for a simplified MIPS Processor
-Generates step-by-step simulation of the Petri net model of a simplified MIPS processor.
+Generates step-by-step simulation of the Petri net model of a simplified MIPS processor. The program requires three input files: instructions.txt with the MIPS instructons to be executed, registers.txt with 8 register tokens to initialize the registers, and datamemory.txt with 8 data tokens to initialize the data memory locations.
 
 
  ![alt tag](images/MIPSsim.gif)
