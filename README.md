@@ -12,7 +12,7 @@ To compile the source code into Java bytecode the JVM can interpret and run, inv
 ```
 
 # Interpreting and Running the Program:
-To interpret and run the compiled Java program, invoke the Java interpreter at the command line to convert the Java bytecode to platform-dependent machine code your computer can understand and run. </br> </br>
+To interpret and run the compiled Java program, invoke the Java interpreter at the command line to convert the Java bytecode to platform-dependent machine code your computer can understand and run. </br> 
 <!---You'll need to supply 3 input files: instructions.txt with the MIPS instructons to be executed, registers.txt with 8 register tokens to initialize the registers, and datamemory.txt with 8 data tokens to initialize the data memory locations.--->
 ```javascript
    java MIPSsim
