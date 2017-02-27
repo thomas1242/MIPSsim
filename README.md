@@ -7,16 +7,18 @@ Generates step-by-step simulation of the Petri net model of a simplified MIPS pr
 # Compiling the Program:
 To compile the source code into Java bytecode the JVM can interpret and run, invoke the Java compiler at the command line:
 ```javascript
+   git clone https://github.com/thomas1242/MIPSsim && cd src
    javac MIPSsim.java 
 ```
 
 # Interpreting and Running the Program:
 To interpret and run the compiled Java program, invoke the Java interpreter at the command line to convert the Java bytecode to platform-dependent machine code your computer can understand and run. </br> </br>
-You'll need to supply 3 input files: instructions.txt with the MIPS instructons to be executed, registers.txt with 8 register tokens to initialize the registers, and datamemory.txt with 8 data tokens to initialize the data memory locations.
+<!---You'll need to supply 3 input files: instructions.txt with the MIPS instructons to be executed, registers.txt with 8 register tokens to initialize the registers, and datamemory.txt with 8 data tokens to initialize the data memory locations.--->
 
 ```javascript
-   java MIPSsim instructions.txt registers.txt datamemory.txt 
+   java MIPSsim
 ```
+   <!---java MIPSsim instructions.txt registers.txt datamemory.txt --->
  
 # Simplified MIPS Processor specification
 ###Instruction Memory (INM):
