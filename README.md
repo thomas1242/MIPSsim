@@ -3,7 +3,6 @@ Generates step-by-step simulation of the Petri net model of a simplified MIPS pr
 
  ![alt tag](images/MIPSsim.gif)
  
- ---
  
 # Compiling the Program:
 To compile the source code into Java bytecode the JVM can interpret and run, invoke the Java compiler at the command line:
