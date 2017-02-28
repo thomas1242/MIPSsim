@@ -182,7 +182,7 @@ class MipsPetriNetSimulator {
 
         BufferedWriter buff = null;
         try {
-            buff = new BufferedWriter(new FileWriter("/Users/Thomas/IdeaProjects/MIPSsim/src/com/company/simulation.txt"));
+            buff = new BufferedWriter(new FileWriter("../resources/simulation.txt"));
         }
         catch(Exception e) {}
 
@@ -459,7 +459,7 @@ class RegisterFile {
     public void initRegisters() {
         Scanner in = null;
         try {
-            in = new Scanner( new FileReader( "/Users/Thomas/IdeaProjects/MIPSsim/src/com/company/registers.txt"  ) );
+            in = new Scanner( new FileReader( "../resources/registers.txt"  ) );
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -530,7 +530,7 @@ class DataMemory {
     public void initMemory() {
         Scanner in = null;
         try {
-            in = new Scanner( new FileReader( "/Users/Thomas/IdeaProjects/MIPSsim/src/com/company/datamemory.txt"  ) );
+            in = new Scanner( new FileReader( "../resources/datamemory.txt"  ) );
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -601,7 +601,7 @@ class InstructionMemory implements TokenHolder {
 
         Scanner in = null;
         try {
-            in = new Scanner( new FileReader( "/Users/Thomas/IdeaProjects/MIPSsim/src/com/company/instructions.txt"  ) );
+            in = new Scanner( new FileReader( "../resources/instructions.txt"  ) );
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
