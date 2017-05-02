@@ -33,15 +33,15 @@ It supports the following instruction format:</br>
 < OR,  R1, R2, R3>   -> R1 = R2 | R3</br>
 < LD,  R1, R2, R3>   -> R1 = DataMemory[R2+R3]</br>
 ### Register File (RGF):
-This MIPS processor supports up to 8 registers (R0 through R7). At a time step it can have up to 8 tokens.
+This MIPS processor supports up to 8 registers (R0 through R7).
 ### Data Memory (DAM):
-This MIPS processor supports up to 8 locations (0 – 7) in the data memory. At a time step it can have up to 8 tokens.
+This MIPS processor supports up to 8 locations (0 – 7) in the data memory.
 ### READ:
-The READ knows the top (in-order) instruction in the Instruction Memory (INM). It checks for the availability of the source operands in the Register File (RGF) for the top
+The READ knows the top instruction in the Instruction Memory (INM). It checks for the availability of the source operands in the Register File (RGF) for the top
 instruction token and passes them to Instruction Buffer (INB) by replacing the source operands with the respective values. Both READ and DECODE transitions are
 executed together.
 ### DECODE:
-The DECODE transition consumes the top (in-order) instruction (one token) from INM and updates the
+The DECODE transition consumes the top instruction (one token) from INM and updates the
 values of the source registers with the values from RGF (with the help of READ transition), and places the modified instruction token in INB.
 ### ISSUE1:
 ISSUE1 transition consumes one arithmetic/logical (ADD, SUB, AND, OR) instruction token (if any) from INB and places it in the Arithmetic Instruction Buffer (AIB).
