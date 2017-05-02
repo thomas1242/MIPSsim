@@ -23,14 +23,15 @@ To interpret and run the compiled Java program, invoke the Java interpreter at t
 # Simplified MIPS Processor specification
 ### Instruction Memory (INM):
 The simulated processor supports only five types of instructions:</br> 
-add (ADD), subtract (SUB), logical and (AND), logical or (OR), and load (LD).</br> It supports the following instruction format:</br>
- < opcode >, < Destination Register >, < First Source Operand >, < Second Source Operand ></br>
+add (ADD), subtract (SUB), logical and (AND), logical or (OR), and load (LD).</br></br>
+It supports the following instruction format:</br>
+ < opcode >, < Destination Register >, < First Source Operand >, < Second Source Operand ></br></br>
  Sample instruction tokens and equivalent functionality are shown below:</br>
 < ADD, R1, R2, R3> -> R1 = R2 + R3</br>
 < SUB, R1, R2, R3> -> R1 = R2 – R3</br>
 < AND, R1, R2, R3> -> R1 = R2 & R3</br>
-< OR, R1, R2, R3>   -> R1 = R2 | R3</br>
-< LD, R1, R2, R3>   -> R1 = DataMemory[R2+R3]</br>
+< OR,  R1, R2, R3>   -> R1 = R2 | R3</br>
+< LD,  R1, R2, R3>   -> R1 = DataMemory[R2+R3]</br>
 ### Register File (RGF):
 This MIPS processor supports up to 8 registers (R0 through R7). At a time step it can have up to 8 tokens.
 ### Data Memory (DAM):
